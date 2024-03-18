@@ -1,14 +1,34 @@
 [tool.poetry]
 name = "mitypes"
-version = "0.1.0"
+version = "0.0.0"
 description = "Type definitions used in Misskey API responses."
 license = "MIT"
 authors = ["sonyakun <owner@sonyakun.com>"]
 readme = "README.md"
+repository = "https://github.com/sonyakun/MisskeyTypes"
+keywords = [
+    "misskey", 
+    "misskey-api",
+    "type-definitions"
+]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 pydantic = "^2.6.4"
+
+[tool.poetry-version-plugin]
+source = "git-tag"
 
 [build-system]
 requires = ["poetry-core"]
